@@ -1,0 +1,44 @@
+Question 1
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Ques1 {
+
+	public static void main(String[] args) {
+    int n,d,q,x;
+    Scanner sc=new Scanner(System.in);
+    ArrayList[] list= new ArrayList[20002];
+    
+    n=sc.nextInt();
+    for(int i=1;i<=n;i++)
+    {
+
+        list[i]=new ArrayList();
+         x=sc.nextInt();
+
+        for(int j=1;j<=x;j++)
+        {
+            int val=sc.nextInt();
+            list[i].add(val);
+
+        }
+    }
+     q=sc.nextInt();
+
+    for(int i=1;i<=q;i++)
+    {
+              
+              int y;
+            x=sc.nextInt();
+            y=sc.nextInt();
+            try
+            {
+              System.out.println(list[x].get(y-1));
+            }catch(Exception e)
+            {
+                System.out.println("ERROR!");
+            }
+    }
+	}
+
+}

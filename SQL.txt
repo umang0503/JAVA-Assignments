@@ -1,0 +1,14 @@
+1.  WAQ to display second highest salary in HR schema.
+    select max(salary) from employees where salary<(select max(salary) from employees);
+
+2. WAQ to display name of employee who is earning maximum in his/her department.
+   SELECT first_name FROM employees d WHERE salary = (SELECT MAX(salary) FROM employees WHERE department_id = d.department_id);
+
+3. WAQ to display emplyees count who are working from same location.
+   select l.city , count(e.first_name) as Employees from employees e, departments d , locations l where e.department_id = d.department_id and d.location_id = l.location_id group by city;
+
+4. WAQ to display number of employees joined year wise.
+   select to_char(hire_date, 'yyyy') as YEAR , COUNT(first_name) as Employees FROM employees GROUP BY to_char(hire_date, 'yyyy');
+
+5. WAQ to top 2 earning employee name and salary in each department.
+   Select first_name,salary from employee Group by (department_id) Order By salary desc

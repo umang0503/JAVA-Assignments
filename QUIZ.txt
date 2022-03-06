@@ -1,0 +1,38 @@
+Q1 Aarushi15
+
+Q8
+Set 1:[A,B,C,D]   
+Set 2:[E]
+Set 3:[A,B,C,D,E]
+sET 4:[A,B,C]
+
+Q10
+error 2
+
+Q14
+You cannot specify whic thread will get notified
+
+Q15
+The event listner should cancel the lengthy task if it is not complete in a specific time
+
+
+Q16
+The program does not compile because this cannot be referenced in a static method
+
+Q17
+123112233
+
+Q18
+Running aquery and retieving a ResultSet Object
+
+Q22
+Only 1 and 3
+
+Q24
+@ApplicationScoped
+
+Q25
+Configuration helps defines a minimum set of class libraries for a wide range of devices,and a profile defines the set of API'S available for a particular family of devices.
+
+
+
